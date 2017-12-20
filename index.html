@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+		#hoverMe{
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div id="hoverMe" onmouseover="disparaitre(this)">
+		<p>Je s'appelle Groot</p>
+	</div>
+	<div id="hoverMe" onmouseover="disparaitre(this)">
+		<p>Je s'appelle Groot</p>
+	</div>
+	<div id="hoverMe" onmouseover="disparaitre(this)">
+		<p>Je s'appelle Groot</p>
+	</div>
+	<script>
+		var element = document.getElementById('hoverMe');
+		function disparaitre(elmt) {
+			elmt.style.display="none";
+		};
+		element.addEventListener('mouseover');
+	</script>
+</body>
+</html>
